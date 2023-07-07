@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		h1{
+			color:yellow;
+			background-color:blue;
+            font-size: 80px;
+		}
+		p{
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			background-color: aquamarine;
+			border: 5px solid green;
+        }
+        .style1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: blueviolet;
+            color: aqua;
+        }
+        .style2{
+            border: 2px solid rgba(202, 86, 154, 0.263);
+            text-align: center;
+        }
+        #alpha{
+            font-weight: bold;
+            text-align: left;
+        }
+        #beta{
+            font-style: italic;
+            text-align: center;
+        }
+        #charlie{
+            font-style:normal;
+            text-shadow: 1px 12px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+            text-align: right;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 60px;
+        }
+        
+    </style>
+    <script>
+        //Javascript
+
+        let a = 6; //intialization
+        let b = 4; //declaration
+        let c = 7;
+        const var1 = 56;
+
+        //console.log(a, test, var1)
+
+        let number = 8; //getal
+        //let text = "Text"; //string
+        let Boolean = true; //true or false
+
+        let d = number + b; 
+        let e = ++ d
+        console.log("D",d, "E",e)
+        let modulus = 100 % 5
+        let devision = 100 / 4
+        console.log("%=", modulus, "/=", devision)
+        //if (d == e)
+        console.log("Bool d == e =", d == e)
+        console.log("d >= a", d >= a)
+
+        x = 5
+        x += 10
+        console.log("x=", x)
+        x **= 0.5
+        console.log("root of x", x)
+        x **= 2
+        console.log("x to the power of 2", x)
+        
+        //function declaration
+        function function1() {
+            console.log("this is a function that does a print");
+        }
+        function optel(num1, num2) {
+            return num1 + num2;
+        }
+        function multi(num1, num2) {
+            console.log(num1 * num2)
+        }
+        function subtract(num1, num2){
+            console.log(num1 - num2)
+        }
+        function devide(num1, num2, num3){
+            console.log(num1 / num2 / num3)
+        }
+
+
+       
+
+        //function call
+        function1()
+        let answer = optel(10, 9)
+        console.log(answer)
+        multi(2, 5)
+        subtract(12, 2)
+        devide(20, 2, 10)
+    
+        function plus() {
+            let num1plus = parseInt(document.getElementById("num1plus").value)
+            let num2plus = parseInt(document.getElementById("num2plus").value)
+            
+            let antwoordplus = (num1plus + num2plus) ;
+            alert(antwoordplus)
+        }
+        function min() {
+            let num1min = parseInt(document.getElementById("num1min").value)
+            let num2min = parseInt(document.getElementById("num2min").value)
+            
+            let antwoordmin = (num1min + num2min) ;
+            alert(antwoordmin)
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="num1plus"> + <input type="text" id="num2plus"><br>
+       <button type="button" onclick="plus()">
+        Add up
+    </button>
+
+    <input type="text" id="num1min"> + <input type="text" id="num2min"><br>
+       <button type="button" onclick="min()">
+        subtract
+    </button>
+
+    
+    
+    
+    
+    <br>
+    <button type="button" onclick="alert('Self-destruct sequence initialized!')">
+        DON'T CLICK ME
+    </button>
+    <h1>HEADER</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        <br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <img src="LucineAlreAscalonianGuardian.png" alt="Ascolonian Guardian" width="360" height="512.6" style="border:6px solid teal">
+    <br>
+    <span style="color: rgb(255, 213, 0); font-size: xx-large;"> Text hier</span>
+    <br>
+    <span class="style1"> tag selector span1</span>
+    <br>
+    <span class="style2"> tag selector span2</span>
+    <br>
+    <div id="alpha">
+    <span> TEKST alpha</span>
+    </div>
+    <div id="beta">
+    <span> TEKST beta</span>
+    </div>
+    <div id="charlie">
+    <span> TEKST charlie</span>
+    </div>
+</body>
+</html>
